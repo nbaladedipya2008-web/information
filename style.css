@@ -1,0 +1,245 @@
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #263238;
+    background-color: #ffffff;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: peachpuff;
+    color: white;
+    padding: 18px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.navbar h2 {
+    color: #ffcc66;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    color: #ffcc66;
+}
+
+/* Banner */
+.banner {
+    min-height: 350px;
+    background: palevioletred;
+    color: white;
+    text-align: center;
+    padding: 95px 20px;
+}
+
+.banner h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.banner p {
+    font-size: 19px;
+    margin-bottom: 25px;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #ffcc66;
+    color: #123456;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: white;
+}
+
+/* Sections */
+section {
+    padding: 55px 7%;
+}
+
+section h2 {
+    text-align: center;
+    color: #123456;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.light-section {
+    background-color: #f0f5fa;
+}
+
+.intro {
+    max-width: 850px;
+    text-align: center;
+    margin: 0 auto 30px;
+}
+
+/* Responsive Information Cards */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.info-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px #12345615;
+    border-bottom: 4px solid #2879a5;
+    transition: transform 0.3s;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+}
+
+.info-card h3 {
+    color: #17618a;
+    margin-bottom: 12px;
+}
+
+/* Faculty Cards */
+.faculty-card {
+    background-color: white;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    box-shadow: 0 4px 12px #12345615;
+    transition: transform 0.3s;
+}
+
+.faculty-card:hover {
+    transform: translateY(-5px);
+}
+
+.faculty-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.faculty-card h3 {
+    margin: 15px 10px 5px;
+    color: #17618a;
+}
+
+.faculty-card p {
+    padding: 0 10px;
+    font-size: 14px;
+}
+
+/* Admission Note */
+.note {
+    max-width: 850px;
+    margin: 25px auto 0;
+    padding: 15px;
+    background-color: #fff5dc;
+    border-left: 4px solid #e5a32b;
+}
+
+/* Contact Details */
+.contact-box {
+    max-width: 700px;
+    margin: auto;
+    padding: 30px;
+    background-color: #f0f5fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px #12345615;
+}
+
+.contact-box p {
+    margin-bottom: 12px;
+    overflow-wrap: anywhere;
+}
+
+/* Footer */
+footer {
+    background-color: #123456;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Tablet Layout */
+@media (max-width: 900px) {
+    .info-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .navbar {
+        justify-content: center;
+    }
+
+    .nav-links {
+        justify-content: center;
+    }
+}
+
+/* Mobile Layout */
+@media (max-width: 600px) {
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .banner {
+        padding: 70px 20px;
+    }
+
+    .banner h1 {
+        font-size: 32px;
+    }
+
+    .banner p {
+        font-size: 16px;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    section {
+        padding: 40px 6%;
+    }
+
+    section h2 {
+        font-size: 26px;
+    }
+}
